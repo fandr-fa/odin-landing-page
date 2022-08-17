@@ -1,0 +1,180 @@
+* {
+  border: 1px solid black;
+}
+.content {
+  height: 100vh;
+  box-sizing: ;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 30%;
+}
+
+.info {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  height: 20%;
+}
+
+.signup {
+  height: 20%;
+}
+
+.footer {
+  height: 10%;
+}
+
+/* HEADER */
+ul {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  gap: 16px;
+}
+
+.header {
+  /*padding-left: 16px;*/
+  /*padding-right: 16px;*/
+  background-color: #1F2937;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: #F8FAF8;
+}
+
+.header-content-left-text, .header-links {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.header-content-left-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F9FAF8;
+}
+
+.header-content {
+  display: flex;
+}
+
+.header-content-left, .header-content-right {
+  flex: 1;
+}
+
+.header-content-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E7EB;
+}
+
+.header-button {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  border-radius: 5px;
+}
+
+/* INFO */
+
+.info-header {
+  font-size: 36px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-grow: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 200px;
+  height: 100%;
+  border: 1px solid black;
+}
+.card-image {
+  width: 100%;
+  height: 80%;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+/* QUOTE */
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #E5E7EB;    
+}
+
+.quote-text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1F2937;
+}
+
+.quote-signature {
+  margin-right: 32px;
+  margin-left: auto;
+}
+
+/* SING UP */
+.signup {
+  display: flex;  
+  justify-content: center;
+  align-items: center;  
+  background-color: gray;
+}
+
+.signup-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background-color: #3882F6;
+}
+
+/*
+.signup-left {
+  margin-left: 20%;
+}
+
+.signup-right {
+  margin-right: 20%;
+}
+*/
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2937;
+  color: #F9FAF8;
+}
