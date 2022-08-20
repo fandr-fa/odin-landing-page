@@ -1,36 +1,38 @@
-* {
-  border: 1px solid black;
-}
-.content {
-  height: 100vh;
-  box-sizing: ;
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  height: 30%;
-}
-
-.info {
-  height: 20%;
-  display: flex;
-  flex-direction: column;
-}
-
-.quote {
-  height: 20%;
-}
-
-.signup {
-  height: 20%;
-}
-
-.footer {
-  height: 10%;
-}
-
 /* HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #1F2937;
+  border: 1px solid yellow;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.header-logo-img {
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
 ul {
   display: flex;
   padding: 0px;
@@ -39,42 +41,27 @@ ul {
   gap: 16px;
 }
 
-.header {
-  /*padding-left: 16px;*/
-  /*padding-right: 16px;*/
-  background-color: #1F2937;
-}
-
-.header-top {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header-logo {
   font-size: 24px;
   color: #F8FAF8;
 }
 
-.header-content-left-text, .header-links {
+.header_bottom-left-text, .header-links {
   font-size: 18px;
   color: #E5E7EB;
 }
 
-.header-content-left-title {
+.header_bottom-left-title {
   font-size: 48px;
   font-weight: 800;
   color: #F9FAF8;
 }
 
-.header-content {
-  display: flex;
-}
-
-.header-content-left, .header-content-right {
+.header_bottom-left, .header_bottom-right {
   flex: 1;
 }
 
-.header-content-right {
+.header_bottom-right {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,15 +72,23 @@ ul {
   background-color: #3882F6;
   color: #F9FAF8;
   border-radius: 5px;
+  margin-top: 8px;
+  border: 1px;
+  padding: 8px 16px;
 }
 
 /* INFO */
+
+.info {
+  padding: 32px;
+}
 
 .info-header {
   font-size: 36px;
   font-weight: 800;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .cards {
@@ -101,20 +96,20 @@ ul {
   justify-content: center;
   gap: 32px;
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  width: 200px;
-  height: 100%;
-  border: 1px solid black;
+  align-items: center;
 }
+
 .card-image {
-  width: 100%;
-  height: 80%;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 150px;
+  min-height: 150px;
   border: 1px solid blue;
   border-radius: 5px;
 }
@@ -123,12 +118,23 @@ ul {
   text-align: center;
 }
 
-/* QUOTE */
-.quote {
+/* QUOTE SECTION */
+
+.quote-section {
+  display: flex;
+  background-color: #E5E7EB;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  padding: 32px;
+}
+
+.quote-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #E5E7EB;    
+  width: 600px;
+  min-width: 400px;
 }
 
 .quote-text {
@@ -139,42 +145,55 @@ ul {
 }
 
 .quote-signature {
+  text-align: right;
   margin-right: 32px;
-  margin-left: auto;
 }
 
-/* SING UP */
+/* SIGN UP SECTION */
+
 .signup {
-  display: flex;  
+  display: flex;
   justify-content: center;
-  align-items: center;  
-  background-color: gray;
+}
+
+.signup-block {
+  display: flex;
+  padding: 32px;
 }
 
 .signup-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 50%;
+  justify-content: center;
+  padding: 32px;
+  gap: 16px;
   background-color: #3882F6;
+  border-radius: 5px;
+  color: #F8FAF8;
 }
 
-/*
-.signup-left {
-  margin-left: 20%;
+.signup-content-text-title {
+  font-weight: 600;
 }
 
-.signup-right {
-  margin-right: 20%;
+.signup-content-button {
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: Transparent;
+  border-color: #F8FAF8;
+  border: 1px solid;
+  outline:none;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #F8FAF8;
 }
-*/
 
 /* FOOTER */
 .footer {
+  background-color: #1F2937;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1F2937;
-  color: #F9FAF8;
+  padding: 32px;
+  font-size: 18px;
+  color: #E5E7EB;
 }
